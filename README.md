@@ -40,7 +40,7 @@ rsCCCCCC study1beta study1stderr study2beta study2stderr study3beta study3stderr
 ```
 - Example (Correlation Matrix)
 
-|col1|col2|col3|col4|
+|C1|C2|C3|C4|
 |---|---|---|---|
 |1|a|b|c|
 |a|1|d|e|
