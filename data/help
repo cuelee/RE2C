@@ -1,0 +1,14 @@
+Entire options are listed here
+
+RE2C --input {fileroot}			Specify input file
+     --output {fileroot}		Specify output file	
+     --cor {fileroot} 			Specify Correlation matrix file
+
+Input File Format:  
+	1. Each rows represent a SNPs. 
+	2. The first column of each rows is for rsID, and the following columns are pairs of effect size and its standard error of Nth study.
+
+Example command
+bash RE2C.sh --i ./example/example_input.txt --o ./out --c ./example/example_cor.txt
+ 
+Please visit the RE2C website for more details

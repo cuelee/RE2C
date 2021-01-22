@@ -1,0 +1,23 @@
+RE2C
+
+RE2C is a free, open-source meta-analysis software tool for genome-wide association study analysis, designed to perform both basic and advanced meta-analytic methods in an efficient manner. RE2C allows users to test heterogeneous effect size between individual statistics by using an optimization technique, spectral decomposition. Our optimization procedure is fast and robust and takes only a day for 1 000 000 SNPs.
+
+#######################################################################
+
+Citation information
+
+If you use our software or refer to the RE2C method, please cite.
+Lee CH, Eskin E, Han B. Increasing the power of meta-analysis of genome-wide association studies to detect heterogeneous effects. Bioinformatics. 2017;33(14):i379–88. 
+
+#######################################################################
+
+URL:
+http://software.buhmhan.com/RE2C
+
+#######################################################################
+
+Contact
+CueH Lee: cuelee@snu.ac.kr
+
+#######################################################################
+
