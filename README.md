@@ -36,7 +36,7 @@ rsBBBBBB study1beta study1stderr study2beta study2stderr study3beta study3stderr
 rsCCCCCC study1beta study1stderr study2beta study2stderr study3beta study3stderr
 ```
 Example (Correlation Matrix)
-
+|_|_|-|-|
 |1|a|b|c|
 |a|1|d|e|
 |b|d|1|h|
