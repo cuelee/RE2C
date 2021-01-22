@@ -20,7 +20,7 @@ git pull
 - Usage 
 Command line arguments: bash RE2C.bash
 
-|A|B|
+|Option|Description|
 |---|---|
 |--i [FILE]|Input file (Required)|
 |--o [FILE]|Output file (defulat = output/out.txt)|
@@ -39,8 +39,8 @@ rsBBBBBB study1beta study1stderr study2beta study2stderr study3beta study3stderr
 rsCCCCCC study1beta study1stderr study2beta study2stderr study3beta study3stderr
 ```
 - Example (Correlation Matrix)
-
-|_|_|-|-|
+|col1|col2|col3|col4|
+|---|---|---|---|
 |1|a|b|c|
 |a|1|d|e|
 |b|d|1|h|
