@@ -29,8 +29,12 @@ Command line arguments: bash RE2C.bash
 
 - Input File Format 
 
-Each rows represent a SNPs. The first column of each rows is for rsID, and the following columns are pairs of effect size and its standard error of Nth study. (If we meta-analyze 5 summary statistics then each line must have 11 columns)
-Correlation matrix is N x N symmetric matrix. An evaluated correlation matrix can be specified by using --cor option in RE2C. When --cor is unused, the code itself assumes an identity matrix of N rows and columns.
+ - Each rows represent a SNPs. 
+  --The first column of each rows is for rsID, 
+and the following columns are pairs of effect size and its standard error of Nth study. (If we meta-analyze 5 summary statistics then each line must have 11 columns)
+
+ - Correlation matrix is N x N symmetric matrix. 
+  - An evaluated correlation matrix can be specified by using --cor option in RE2C. When --cor is unused, the code itself assumes an identity matrix of N rows and columns.
 
 Example (Input File)
 ```
