@@ -20,10 +20,11 @@ git pull
 - Usage 
 Command line arguments: bash RE2C.bash
 
+|A|B|
 |---|---|
-|--i [FILE]| Input file (Required)|
-|--o [FILE]| Output file (defulat = output/out.txt)|
-|--c [FILE] or --cor [FILE]| Correlation matrix|
+|--i [FILE]|Input file (Required)|
+|--o [FILE]|Output file (defulat = output/out.txt)|
+|--c [FILE] or --cor [FILE]|Correlation matrix|
 |--h or --help|Print help|
 
 - Input File Format 
