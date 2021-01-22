@@ -18,7 +18,7 @@ git pull
 
 ## User Guide
 - Usage 
-|Command line arguments: bash RE2C.bash|
+Command line arguments: bash RE2C.bash
 |--i [FILE]| Input file (Required)|
 |--o [FILE]| Output file (defulat = output/out.txt)|
 |--c [FILE] or --cor [FILE]| Correlation matrix|
