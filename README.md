@@ -15,6 +15,51 @@ You can update to the newest version of `RE2C` using git. First, navigate to you
 ```
 git pull
 ```
+
+## User Guide
+- Usage 
+|Command line arguments: bash RE2C.bash|
+|--i [FILE]| Input file (Required)|
+|--o [FILE]| Output file (defulat = output/out.txt)|
+|--c [FILE] or --cor [FILE]| Correlation matrix|
+|--h or --help|Print help|
+
+- Input File Format 
+
+Each rows represent a SNPs. The first column of each rows is for rsID, and the following columns are pairs of effect size and its standard error of Nth study. (If we meta-analyze 5 summary statistics then each line must have 11 columns)
+Correlation matrix is N x N symmetric matrix. An evaluated correlation matrix can be specified by using --cor option in RE2C. When --cor is unused, the code itself assumes an identity matrix of N rows and columns.
+
+Example (Input File)
+```
+rsAAAAAA study1beta study1stderr study2beta study2stderr study3beta study3stderr
+rsBBBBBB study1beta study1stderr study2beta study2stderr study3beta study3stderr
+rsCCCCCC study1beta study1stderr study2beta study2stderr study3beta study3stderr
+```
+Example (Correlation Matrix)
+
+|1|a|b|c|
+|a|1|d|e|
+|b|d|1|h|
+|c|e|h|1|
+
+- Example Run
+```
+bash RE2C.sh --input ./example/example_input.txt --output ./out --cor ./example/example_cor.txt
+```
+
+- Output File
+
+|Col. Num.|Col. name|Description|
+|---|---|---|
+|1|rsID|SNP rsID|
+|2|Nstudy|Number of studies used in meta-analysis|
+|3|LSp|Lin-Sullivan’s P-value (FE)|
+|4|RE2Cs1|RE2C statistic mean effect part|
+|5|RE2Cs2|RE2C statistic heterogeneity part|
+|6|RE2Cp|RE2C p-value|
+
+
+
 ## Citation
 
 If you use our software or refer to the RE2C method, please cite.
