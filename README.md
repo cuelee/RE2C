@@ -10,8 +10,8 @@ git clone git://github.com/cuelee/RE2C.git
 cd RE2C
 ```
 
-## Updating PLEIO
-You can update to the newest version of `PLEIO` using git. First, navigate to your pleio/ directory (e.g., cd pleio), then run
+## Updating RE2C
+You can update to the newest version of `RE2C` using git. First, navigate to your RE2C/ directory, then run
 ```
 git pull
 ```
