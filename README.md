@@ -19,6 +19,7 @@ git pull
 ## User Guide
 - Usage 
 Command line arguments: bash RE2C.bash
+
 |--i [FILE]| Input file (Required)|
 |--o [FILE]| Output file (defulat = output/out.txt)|
 |--c [FILE] or --cor [FILE]| Correlation matrix|
@@ -35,7 +36,8 @@ rsAAAAAA study1beta study1stderr study2beta study2stderr study3beta study3stderr
 rsBBBBBB study1beta study1stderr study2beta study2stderr study3beta study3stderr
 rsCCCCCC study1beta study1stderr study2beta study2stderr study3beta study3stderr
 ```
-Example (Correlation Matrix)
+- Example (Correlation Matrix)
+
 |_|_|-|-|
 |1|a|b|c|
 |a|1|d|e|
