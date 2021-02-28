@@ -78,11 +78,11 @@ outf="$outputf.txt"
 touch $outf
 cat $curdir/data/versioninfo > $logf
 echo " ## input arguments ## " >> $logf 
-echo " WD	: $curdir" >> $logf
-echo " INPUT	: $inputf" >> $logf
-echo " OUTPUT	: $outputf" >> $logf
-echo " COR	: $corf" >> $logf
-echo " N_thread	: $threads" >> $logf
+echo " WD:	$curdir" >> $logf
+echo " INPUT:	$inputf" >> $logf
+echo " OUTPUT:	$outputf" >> $logf
+echo " COR:	$corf" >> $logf
+echo " CORES:	$threads" >> $logf
 
 
 ## runAnalysis!!
