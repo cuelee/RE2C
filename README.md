@@ -26,6 +26,7 @@ Command line arguments: bash RE2C.bash
 |--o [FILE]|Output file (defulat = output/out.txt)|
 |--c [FILE] or --cor [FILE]|Correlation matrix|
 |--h or --help|Print help|
+|--threads [N]|multi-thread computing|
 
 - Input File Format 
 
