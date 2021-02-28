@@ -23,10 +23,10 @@ Command line arguments: bash RE2C.bash
 |Option|Description|
 |---|---|
 |--i [FILE]|Input file (Required)|
-|--o [FILE]|Output file (defulat = output/out.txt)|
+|--o [FILE]|Output file (default=./out.txt)|
 |--c [FILE] or --cor [FILE]|Correlation matrix|
+|--threads [N]|Use multi-thread (default=1)|
 |--h or --help|Print help|
-|--threads [N]|multi-thread computing|
 
 - Input File Format 
 
