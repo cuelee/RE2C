@@ -3,7 +3,7 @@ Entire options are listed here
 RE2C --input {fileroot}			Specify input file
      --output {fileroot}		Specify output file	
      --cor {fileroot} 			Specify correlation matrix file
-     --threads {fileroot} 		Specify number of threads used in this analysis
+     --threads N			Specify number of threads that will be used in this analysis
 
 Input File Format:  
 	1. Each rows represent a SNPs. 
