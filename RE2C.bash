@@ -10,6 +10,7 @@ parsed=""
 #unparsed=""
 inputf="NA"
 outputf="$curdir/out"
+threads="1"
 corf="NA"
 
 # load the versioninfo
@@ -36,6 +37,11 @@ case $key in
 	parsed="$parsed cor"
 	shift # past argument
 	;;
+	--threads)
+	parsed="$parsed --threads"
+	threads="$2"
+	shift # past argument
+	;;
 	--h|--help)
 	cat $curdir/data/help
 	exit 0
@@ -58,23 +64,28 @@ fi
 echo " parsed arguments:$parsed"
 #echo "unparsed arguments:$unparsed"
 echo " ## input arguments ## "
-echo " WD	: $curdir"
-echo " INPUT	: $inputf"
-echo " OUTPUT	: $outputf"
-echo " COR	: $corf"
+echo " WD:	$curdir"
+echo " INPUT:	$inputf"
+echo " OUT:	$outputf"
+echo " COR:	$corf"
+echo " CORES:	$threads"
 
 
 ## create log file
 logf="$outputf.log"
+outf="$outputf.txt"
+
+touch $outf
 cat $curdir/data/versioninfo > $logf
 echo " ## input arguments ## " >> $logf 
 echo " WD	: $curdir" >> $logf
 echo " INPUT	: $inputf" >> $logf
 echo " OUTPUT	: $outputf" >> $logf
 echo " COR	: $corf" >> $logf
+echo " N_thread	: $threads" >> $logf
 
 
 ## runAnalysis!!
 #echo "Rscript $curdir/R/runAnalysis.R \"$curdir\" \"$inputf\" \"$outputf\" \"$corf\""
-Rscript $curdir/R/runAnalysis.R $curdir $inputf $outputf $corf $logf
+Rscript $curdir/R/runAnalysis.R $curdir $inputf $outputf $corf $logf $threads
 
