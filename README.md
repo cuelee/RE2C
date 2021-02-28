@@ -66,8 +66,13 @@ bash RE2C.sh --input ./example/example_input.txt --output ./out --cor ./example/
 |4|RE2Cs1|RE2C statistic mean effect part|
 |5|RE2Cs2|RE2C statistic heterogeneity part|
 |6|RE2Cp|RE2C p-value|
+|7|RE2Cp*|RE2C* p-value|
 
+## RE2C generates two statistical significances: RE2Cp and RE2Cp*. which one should I use for my analysis?
 
+The original RE2C model (RE2Cp) was developed to complement the FE model, the golden standard in meta-analysis. For example, Let assume that we ran association tests on a SNP using 1. the conventional fixed effect meta-analysis, and 2. RE2C. If the p-value of the fixed effect method (FEp) is 0.03 and the p-value of the RE2C model (RE2Cp) is 0.01, the statistical significance of this SNP will be of min(0.03, 0.01) * 2 = 0.02.
+
+We later discovered that some might just want to use the statistical significance of RE2C alone. In this case, you can use RE2Cp* (not RE2Cp).
 
 ## Citation
 
