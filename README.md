@@ -25,7 +25,7 @@ Command line arguments: bash RE2C.bash
 |--i [FILE]|Input file (Required)|
 |--o [FILE]|Output file (default=./out.txt)|
 |--c [FILE] or --cor [FILE]|Correlation matrix|
-|--threads [N]|Use multi-thread (default=1)|
+|--threads [N]|Use multi-thread computing (default=1)|
 |--h or --help|Print help|
 
 - Input File Format 
