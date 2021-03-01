@@ -125,7 +125,7 @@ if(args[3]!="NA") {output_file <- paste(args[3],".txt",sep="");log_file <- paste
 } else {stop("RE2C.sh provided no outputFile_path")}
 if(args[4]!="NA") {cor_file<- args[4]} else {cor_file <- NA }
 if(args[5]!="NA") {log_file<- args[5]} else {stop("Unknown problem occurs")}
-if(args[6]!=1) {ncores <- min(detectCores(), args[6])} else {ncores <- 1}
+if(args[6]!=1) {ncores <- min(detectCores(), as.numeric(args[6]))} else {ncores <- 1}
 
 # work_path='/Users/cuelee/Dropbox/github/RE2C'
 # input_file='/Users/cuelee/Dropbox/github/RE2C/example/example_input.txt'
